@@ -1,0 +1,6 @@
+Find time stamps in BIND conf files:
+grep "[0-9]\{10\}" orig_config_files/db.*
+orig_config_files/db.192:	    2015080301
+orig_config_files/db.charriere.eu:	    2015080301
+orig_config_files/db.charriere.eu-external:	    2015060603
+

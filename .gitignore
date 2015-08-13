@@ -1,3 +1,6 @@
+# BSC ignore entries
+orig_config_files
+#
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

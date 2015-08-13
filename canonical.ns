@@ -1,0 +1,43 @@
+hector		213.41.153.165
+sisyphe		192.168.0.96
+wps1		192.168.0.97
+localhost	127.0.0.1
+calypso		192.168.0.1	main router on ADSL (Nerim)
+electra		192.168.0.2	router on NUMERICABLE
+themis		192.168.0.223	Nintendo Wii U
+nestor		192.168.0.224	repeateur wifi Allnet ALL0237R
+icarus		192.168.0.225	imprimanteréseau LEXMARK
+minerva		192.168.0.226	CISCO wifi access point WAP4410N - SSID Selene
+phoenix		192.168.0.227	Véronique's Apple MacBookAir
+achille		192.168.0.228	Thibault's Nexus 5 smartphone (also Achilles)
+scylla		192.168.0.229	Sony Playstation
+eurydice        192.168.0.230	Anne-Sophie's MacBook b8:e8:56:04:88:8c
+erato	        192.168.0.231	répéteur WiFi Linksys WAP54G-NEW
+atlas	        192.168.0.232	répéteur WiFi Linksys WAP54G-OLD (broken)
+zephyr		192.168.0.233	Point d'accès WiFi Linksys WRT54G-Chambre 1
+paris		192.168.0.234	Apple-TV grand salon
+cassandra       192.168.0.235	iPhone Veronique
+chaos           192.168.0.236	iPhone Anne-Sophie
+nausicaa-eth1   192.168.0.237	NAUSICAA (Bruno) 2nd interface
+calliope        192.168.0.238	CISCO WiFI access point WAP4410N - ssid MERCURE
+terpsichore	192.168.0.239	FREE
+adonis		192.168.0.240	Nicholas' Apple powerbook
+orphee		192.168.0.241	Anne-Sophie's iPad
+nausicaa	192.168.0.242	Bruno's desktop
+ajax		192.168.0.243	bruno's iPhone 6
+icare		192.168.0.244	camille's laptop
+clio		192.168.0.245	bruno's iPhone 3
+pegasus		192.168.0.246	Raspberri Pi Pegasus WiFi port
+europe		192.168.0.247	FREE
+circe		192.168.0.248	Bruno's iPhone 4
+pygmalion	192.168.0.249	Bruno's old ACER laptop
+pegase		192.168.0.250	Raspberri Pi Pegasus ETH port
+hypnos		192.168.0.251	Thibault's desktop (WiFi interface)
+phoebe          192.168.0.252	KOBO reader
+helios          192.168.0.253	Grundig Web radio
+bostik          192.168.0.254	Bruno's laptop
+hermes          192.168.1.1  	NOOS cable modem (different subnets)
+electra-eth0	192.168.1.2  	ELECTRA interface vers modem eth0
+wap		192.168.1.245	LINKSYS WAP54G default address after reset
+wrt		192.168.1.1	LINKSYS WRT54G default address after reset
+myhosting	168.144.64.33	charriere.com hosting
