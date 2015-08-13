@@ -1,0 +1,156 @@
+$TTL 4h
+; CHARRIERE.EU & BCHARRIERE.COM domains database, 
+; 		'Internal' view, as seen from the INTRANET 192.168.0/24
+; LOG
+; 2016-0606     OVERHAULED and installed on new ELECTRA (Debian 8)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;	Think of updating Serial so that slave NS updates automatically
+;;;;;;;;;;;;;;;;	Attention au point final si FQDN !!
+
+@	IN	SOA	calypso.charriere.eu. admin.charriere.com. (
+			2015080301
+			1h
+			600
+			6w
+			1h )
+
+; name servers
+	IN 	NS	electra
+	IN 	NS	calypso
+	IN 	A	192.168.0.1 	; without machine name. Check if needed !
+
+; mail servers
+	IN	MX	70 electra
+	IN	MX	30 calypso
+;
+; Text information - location & responsible person
+	IN	RP	bruno.charriere.com. charriere.eu.
+	IN	TXT	"Bruno S. Charriere - CHATOU - FRANCE"
+
+; alias for external interface access
+hector		IN	A	213.41.153.165
+
+; network printers, modems  and wifi access points
+sisyphe		IN	A	192.168.0.96
+wps1		IN	A	192.168.0.97
+
+;local machines
+localhost	IN	A	127.0.0.1	;
+calypso		IN	A	192.168.0.1	; main router on ADSL (Nerim)
+electra		IN	A	192.168.0.2	; router on NUMERICABLE
+themis		IN	A	192.168.0.223	; Nintendo Wii U
+nestor		IN	A	192.168.0.224	; repeateur wifi Allnet ALL0237R
+icarus		IN	A	192.168.0.225	; imprimanteréseau LEXMARK
+minerva		IN	A	192.168.0.226	; CISCO wifi access point WAP4410N - SSID Selene
+phoenix		IN	A	192.168.0.227	; Véronique's Apple MacBookAir
+achille		IN	A	192.168.0.228	; Thibault's Nexus 5 smartphone (also Achilles)
+scylla		IN	A	192.168.0.229	; Sony Playstation
+eurydice	IN      A       192.168.0.230   ; Anne-Sophie's MacBook b8:e8:56:04:88:8c
+erato		IN      A       192.168.0.231   ; répéteur WiFi Linksys WAP54G-NEW
+atlas		IN      A       192.168.0.232   ; répéteur WiFi Linksys WAP54G-OLD (broken)
+zephyr		IN      A       192.168.0.233   ; Point d'accès WiFi Linksys WRT54G-Chambre 1
+paris		IN      A       192.168.0.234   ; Apple-TV grand salon
+cassandra       IN      A       192.168.0.235   ; iPhone Veronique
+chaos           IN      A       192.168.0.236   ; iPhone Anne-Sophie
+nausicaa-eth1   IN      A       192.168.0.237   ; NAUSICAA (Bruno) 2nd interface
+calliope        IN      A       192.168.0.238   ; CISCO WiFI access point WAP4410N - ssid MERCURE
+terpsichore	IN	A	192.168.0.239	; FREE
+adonis		IN	A	192.168.0.240	; Nicholas' Apple powerbook
+orphee		IN	A	192.168.0.241	; Anne-Sophie's iPad
+nausicaa	IN	A	192.168.0.242	; Bruno's desktop
+ajax		IN	A	192.168.0.243	; bruno's iPhone 6
+icare		IN	A	192.168.0.244	; camille's laptop
+clio		IN	A	192.168.0.245	; bruno's iPhone 3
+pegasus		IN	A	192.168.0.246	; Raspberri Pi Pegasus WiFi port
+europe		IN	A	192.168.0.247	; FREE
+circe		IN	A	192.168.0.248	; Bruno's iPhone 4
+pygmalion	IN	A	192.168.0.249	; Bruno's old ACER laptop
+pegase		IN	A	192.168.0.250	; Raspberri Pi Pegasus ETH port
+hypnos		IN	A	192.168.0.251	; Thibault's desktop (WiFi interface)
+phoebe          IN      A       192.168.0.252   ; KOBO reader
+helios          IN      A       192.168.0.253   ; Grundig Web radio
+bostik          IN      A       192.168.0.254   ; Bruno's laptop
+
+
+hermes          IN      A       192.168.1.1     ; NOOS cable modem (different subnets)
+electra-eth0	IN	A	192.168.1.2     ; ELECTRA interface vers modem eth0
+wap		IN	A	192.168.1.245	; LINKSYS WAP54G default address after reset
+wrt		IN	A	192.168.1.1	; LINKSYS WRT54G default address after reset
+myhosting	IN	A	168.144.64.33	; charriere.com hosting
+charriere	IN	CNAME	myhosting
+softcom		IN	CNAME	myhosting
+
+;aliases
+smtp		IN	CNAME	calypso
+modem		IN	CNAME	hermes
+albion		IN	CNAME	phoenix
+bureau		IN 	CNAME	nausicaa
+nausicaa-eth0   IN      CNAME   nausicaa
+vectra		IN	CNAME	electra
+mail		IN	CNAME	electra
+webmail		IN	CNAME	electra
+www		IN	CNAME	electra
+ftp		IN	CNAME	electra
+serveur		IN	CNAME	electra
+ns		IN	CNAME	electra
+ns1		IN	CNAME	electra
+ns2		IN	CNAME	calypso
+secure		IN	CNAME	electra
+airis-charriere	IN	CNAME	bostik
+wps		IN	CNAME	wps1
+scanner		IN	CNAME	sisyphe
+HPC5180		IN	CNAME	sisyphe
+printer		IN	CNAME	icarus
+lexmark		IN	CNAME	icarus
+CS310n		IN	CNAME	icarus
+pegasus-eth	IN	CNAME	pegase
+pegasus-wifi	IN	CNAME	pegasus
+raspberry	IN	CNAME	pegasus
+pi		IN	CNAME	pegasus
+iphone		IN	CNAME	ajax
+guest		IN	CNAME	calliope
+radio		IN	CNAME	helios
+kobo		IN	CNAME	phoebe
+ulysse		IN	CNAME	hypnos
+ulysses		IN	CNAME	hypnos
+numericable	IN	CNAME	modem
+gaia		IN	CNAME	zephyr
+selene		IN	CNAME	minerva
+mercure		IN	CNAME	calliope
+mercury		IN	CNAME	calliope
+achilles	IN	CNAME 	achille
+nexus		IN	CNAME	achille
+europe_eth2	IN	CNAME	europeA
+wii		IN	CNAME	themis
+nintendo	IN	CNAME	themis
+
+
+
+;other aliases for intranet web access
+photos		IN	CNAME	electra
+photo 		IN	CNAME	electra
+
+bruno		IN 	CNAME	electra
+camille		IN 	CNAME	electra
+nicholas	IN 	CNAME	electra
+veronique	IN 	CNAME	calypso
+annesophie 	IN 	CNAME	calypso
+thibault	IN 	CNAME	calypso
+barton		IN 	CNAME	calypso
+doc		IN 	CNAME	calypso
+books		IN	CNAME	nausicaa
+library		IN	CNAME	nausicaa
+calibre		IN	CNAME	nausicaa
+
+;nicknames
+vero		IN	CNAME	veronique
+nicho		IN	CNAME	nicholas
+cam		IN	CNAME	camille
+cotr		IN	CNAME	camille
+anneso		IN	CNAME	annesophie
+as		IN	CNAME	annesophie
+tibo		IN	CNAME	thibault
+tib		IN	CNAME	thibault
+
+

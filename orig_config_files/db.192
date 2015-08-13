@@ -1,0 +1,61 @@
+$TTL 4h
+; Bruno Charriere - 
+;-------------------------    CHANGE LOG    -----------------
+; 2005-06-18	creation et set-up d'après "Linux Complete, Second Edition", Sybex, 2002
+; 2016-0606     OVERHAULED and installed on new ELECTRA (Debian 8)
+;________________________________________________________________________
+; DO NOT FORGET TO UPDATE SERIAL. Reload with #sudo rndc reload
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+
+@	IN	SOA	calypso.charriere.eu. admin.charriere.com. (
+			2015080301
+			1h
+			300
+			6w
+			1h )
+
+	IN 	NS	calypso.charriere.eu.
+	IN	NS	electra.charriere.eu.
+
+1	IN 	PTR	calypso.charriere.eu.
+2	IN 	PTR	electra.charriere.eu.
+96	IN 	PTR	sisyphe.charriere.eu.
+97	IN 	PTR	wps1.charriere.eu.
+98	IN 	PTR	wrt.charriere.eu.
+99	IN 	PTR	wap.charriere.eu.
+
+223	IN	PTR	themis.charriere.eu.
+224	IN	PTR	nestor.charriere.eu.
+225	IN	PTR	icarus.charriere.eu.
+226	IN	PTR	minerva.charriere.eu.
+227	IN	PTR	phoenix.charriere.eu.
+228	IN	PTR	achille.charriere.eu.
+229	IN	PTR	scylla.charriere.eu.
+230	IN	PTR	eurydice.charriere.eu.
+231     IN      PTR     erato.charriere.eu.
+232     IN      PTR     atlas.charriere.eu.
+233     IN      PTR     zephyr.charriere.eu.
+234     IN      PTR     paris.charriere.eu.
+235	IN	PTR	cassandra.charriere.eu.
+236	IN	PTR	chaos.charriere.eu.
+237	IN	PTR	nausicaa-eth1.charriere.eu.
+238	IN	PTR	calliope.charriere.eu.
+239	IN	PTR	terpsichore.charriere.eu.
+240	IN	PTR	adonis.charriere.eu.
+241	IN	PTR	orphee.charriere.eu.
+242	IN	PTR	nausicaa.charriere.eu.
+243	IN	PTR	ajax.charriere.eu.
+244	IN	PTR	icare.charriere.eu.
+245	IN	PTR	clio.charriere.eu.
+246	IN	PTR	pegasus.charriere.eu.
+247	IN	PTR	europe.charriere.eu.
+248	IN	PTR	circe.charriere.eu.
+249	IN	PTR	pygmalion.charriere.eu.
+250	IN	PTR	pegase.charriere.eu.
+251	IN	PTR	hypnos.charriere.eu.
+252	IN	PTR	phoebe.charriere.eu.
+253	IN	PTR	helios.charriere.eu.
+254	IN	PTR	bostik.charriere.eu.
+
+
